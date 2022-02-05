@@ -18,8 +18,8 @@ global tauMin
 
 % state
 z1 = x(1);
-% z2 = x(2);
+z2 = x(2);
 % tau = x(3);
 
-xplus = [z1;z1;tauMin]; 
+xplus = [z1;z2;tauMin]; 
 end  

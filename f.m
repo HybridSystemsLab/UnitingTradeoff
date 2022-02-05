@@ -22,8 +22,11 @@ z1 = x(1);
 z2 = x(2);
 tau = x(3);
 
-z1dot = z2;
-z2dot = -(3/tau)*z2 - 2*c*GradientL(z1);
+% z1dot = z2;
+% z2dot = -(3/tau)*z2 - 4*c*GradientL(z1);
+
+z1dot = (2/tau)*(z2 - z1);
+z2dot = -2*c*tau*GradientL(z1);
 
 xdot = [z1dot;z2dot;1]; 
 end
